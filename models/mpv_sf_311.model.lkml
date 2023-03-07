@@ -1,5 +1,5 @@
 # Define the database connection to be used for this model.
-connection: "mpv_"
+connection: "mpv-looker-mpv-bq"
 
 # include all the views
 include: "/views/**/*.view"
@@ -9,7 +9,7 @@ include: "/views/**/*.view"
 
 datagroup: mpv_sf_311_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "30 minute"
 }
 
 persist_with: mpv_sf_311_default_datagroup
