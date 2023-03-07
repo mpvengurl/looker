@@ -3711,3 +3711,5 @@ explore: cloudaudit_googleapis_com_activity_20230127 {
 }
 
 explore: service_calls_30_days {}
+
+explore: google_trends {}
