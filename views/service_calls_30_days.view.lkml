@@ -7,7 +7,7 @@ view: service_calls_30_days {
     sql: ${TABLE}.agency ;;
   }
 
-  dimension: block_id {
+  dimension: block_identity {
     type: number
     sql: ${TABLE}.block_id ;;
   }
