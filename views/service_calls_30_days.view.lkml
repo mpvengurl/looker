@@ -143,6 +143,7 @@ view: service_calls_30_days {
 
   measure: count {
     type: count
-    drill_fields: [zip_code]
+    drill_fields: [detail*]
   }
+  set: detail {fields:[council_district,category,callcode.incident_address]}
 }
