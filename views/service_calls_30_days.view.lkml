@@ -145,5 +145,5 @@ view: service_calls_30_days {
     type: count
     drill_fields: [detail*]
   }
-  set: detail {fields:[council_district,category,callcode.incident_address]}
+  set: detail {fields:[council_district,category,callcode]}
 }
