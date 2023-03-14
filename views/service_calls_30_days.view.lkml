@@ -143,6 +143,6 @@ view: service_calls_30_days {
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [zip_code]
   }
 }
