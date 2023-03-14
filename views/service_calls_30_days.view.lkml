@@ -141,8 +141,10 @@ view: service_calls_30_days {
     sql: ${TABLE}.zip_code ;;
   }
 
-  measure: count {
-    type: count
+  measure: count_distinct {
+    type: count_distinct
+    sql: ${zip_code} ;;
+    filters: [callcode: "100"]
     drill_fields: [detail*]
   }
   set: detail {fields:[council_district,category,callcode]}
